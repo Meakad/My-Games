@@ -11,7 +11,7 @@ echo.
 echo Bienvenue a toi.
 ping localhost -n 6 > nul
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"start.vbs"
-set text=Bienvenue à toi es tu sur de vouloir jouer ce monde est hostile
+set text=Bienvenue Ã  toi es tu sur de vouloir jouer ce monde est hostile
 echo speech.speak "%text%">>"start.vbs"
 start start.vbs
 echo.
@@ -41,7 +41,7 @@ echo speech.speak "%text%">>"start.vbs"
 start start.vbs
 ping localhost -n 1 > nul
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"newplayer.vbs"
-set text= il était une fois une jeune femme qui se prénomais Martine Elle étais trés belle et savait parler plusieurs langues. elle étais face à son destin maintenant et ne pouvez rien faire d'autre que de se battre dans l'arène Elle allez faire face au machine et fantôme elle ne s'inquiètais pas pour l'inconu mais elle s'inquiètais plûtot pour le grand boss à battre
+set text= il Ã©tait une fois une jeune femme qui se prÃ©nomais Martine Elle Ã©tais trÃ©s belle et savait parler plusieurs langues. elle Ã©tais face Ã  son destin maintenant et ne pouvez rien faire d'autre que de se battre dans l'arÃ¨ne Elle allez faire face au machine et fantÃ´me elle ne s'inquiÃ¨tais pas pour l'inconu mais elle s'inquiÃ¨tais plÃ»tot pour le grand boss Ã  battre
 echo speech.speak "%text%">>"newplayer.vbs"
 start newplayer.vbs
 echo.
@@ -219,7 +219,7 @@ del 3.vbs
 goto options
 :4
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"4.vbs"
-set text=Crédits
+set text=CrÃ©dits
 echo speech.speak "%text%">>"4.vbs"
 start 4.vbs
 ping localhost -n 2 > nul
@@ -315,7 +315,7 @@ goto exit
 :credits
 cls
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"credit.vbs"
-set text=Programmer par Amine Kaddar mis à jour avril 2019. Voulez vous sortir ?
+set text=Programmer par Amine Kaddar mis Ã  jour avril 2019. Voulez vous sortir ?
 echo speech.speak "%text%">>"credit.vbs"
 start credit.vbs
 echo.
@@ -374,7 +374,7 @@ goto exit
 :options
 cls
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"option.vbs"
-set text=Le premier chiffre est pour le fond et le deuxième pour le texte. Entrer le Code Couleur
+set text=Le premier chiffre est pour le fond et le deuxiÃ¨me pour le texte. Entrer le Code Couleur
 echo speech.speak "%text%">>"option.vbs"
 start option.vbs
 echo.
@@ -480,7 +480,7 @@ set pawn1=%random:~-2%
 set pawn2=%random:~-2%
 set pawn3=%random:~-3%
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"pawnload.vbs"
-set text=The big unknown !pawn! et the big machine !pawn1! quand à the big ghost il a !pawn2! et the big boss a lui !pawn3! points
+set text=The big unknown !pawn! et the big machine !pawn1! quand Ã  the big ghost il a !pawn2! et the big boss a lui !pawn3! points
 echo speech.speak "%text%">>"pawnload.vbs"
 start pawnload.vbs
 goto niveau1
@@ -542,7 +542,7 @@ goto pawn
 :pawn
 cls
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"pawn.vbs"
-set text=Vous avez !money! pièces et une armure de !armor! points. Votre énergie est de !health!.
+set text=Vous avez !money! piÃ¨ces et une armure de !armor! points. Votre Ã©nergie est de !health!.
 echo speech.speak "%text%">>"pawn.vbs"
 start pawn.vbs
 echo.
@@ -615,7 +615,7 @@ goto pawn
 :attack
 cls
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"attack.vbs"
-set text=!arme! attaque en cours attaque terminée
+set text=!arme! attaque en cours attaque terminÃ©e
 echo speech.speak "%text%">>"attack.vbs"
 start attack.vbs
 
@@ -821,7 +821,7 @@ goto pawn
 :energy
 set /a health+=%random:~-1%
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"energie.vbs"
-set text= énergie à !health! points
+set text= Ã©nergie Ã  !health! points
 echo speech.speak "%text%">>"energie.vbs"
 start energie.vbs
 ping localhost -n 3 >nul
@@ -832,7 +832,7 @@ goto pawn
 :money
 set /a money+=%random:~-1%
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"money.vbs"
-set text=bourse de !money! pièces
+set text=bourse de !money! piÃ¨ces
 echo speech.speak "%text%">>"money.vbs"
 start money.vbs
 ping localhost -n 3 >nul
@@ -1133,7 +1133,7 @@ set pawn1=%random:~-2%
 set pawn2=%random:~-3%
 set pawn3=%random:~-4%
 echo set speech=Wscript.CreateObject("SAPI.spVoice")>>"pawnload.vbs"
-set text=The big unknown a !pawn! points et the big machine !pawn1! quand à the big ghost il a !pawn2!  et the big boss a lui !pawn3! points
+set text=The big unknown a !pawn! points et the big machine !pawn1! quand Ã  the big ghost il a !pawn2!  et the big boss a lui !pawn3! points
 echo speech.speak "%text%">>"pawnload.vbs"
 start pawnload.vbs
 ping localhost -n 5 > nul
